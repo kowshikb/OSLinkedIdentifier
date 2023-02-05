@@ -115,6 +115,7 @@ public class GreenKart {
 			}
 			objGreenKart.findElement(objGreenKart.AddToCart).click();
 			objGreenKart.findElement(objGreenKart.searchField).clear();
+			objGreenKart.findElement(objGreenKart.searchButtonCss).click();
 
 		}
 		System.out.println("Added items to cart");

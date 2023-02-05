@@ -15,6 +15,7 @@ public class GreenKartElements {
 	}
 
 	public By searchField = By.cssSelector("input[type='search']");
+	public By searchButtonCss= By.cssSelector("button.search-button");
 
 	public By productName = By.cssSelector("h4.product-name");
 

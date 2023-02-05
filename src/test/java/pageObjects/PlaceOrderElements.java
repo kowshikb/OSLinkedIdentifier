@@ -1,6 +1,7 @@
 package pageObjects;
 
 import java.time.Duration;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -20,6 +21,8 @@ public class PlaceOrderElements {
 
 	public By table = By.cssSelector("table#productCartTables");
 	public By placeOrderButton=By.xpath("//*[contains(text(),'Place Order')]");
+	public By itemsaddedtocartcss=By.cssSelector("td>p.product-name");
+	
 
 	public void checkCurrentpageUrl() {
 
@@ -29,6 +32,11 @@ public class PlaceOrderElements {
 	
 	public WebElement findElement(By element) {
 		return driver.findElement(element);
+	}
+	
+
+	public List<WebElement> findElements(By element) {
+		return driver.findElements(element);
 	}
 	
 

@@ -20,9 +20,9 @@ public class SelectCountry {
 		objselectCountry.checkCurrentpageUrl();
 	}
 
-	@And("Select Country")
-	public void select_country() {
-		objselectCountry.selectCountry("India");
+	@And("^Select Country as (.+)$")
+	public void select_country(String string) {
+		objselectCountry.selectCountry(string);
 	}
 
 	@And("Tap on proceed")

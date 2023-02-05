@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-02T09:14:27 IST" name="Default suite" finished-at="2023-02-02T09:14:48 IST" duration-ms="20630">
+  <suite started-at="2023-02-05T15:52:51 IST" name="Default suite" finished-at="2023-02-05T15:53:15 IST" duration-ms="23760">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfiles.RunnerClass$runnerfiles@2cf3d63b]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-02-02T09:14:27 IST" name="Default test" finished-at="2023-02-02T09:14:48 IST" duration-ms="20630">
+    <test started-at="2023-02-05T15:52:51 IST" name="Default test" finished-at="2023-02-05T15:53:15 IST" duration-ms="23760">
       <class name="runnerfiles.RunnerClass$runnerfiles">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runnerfiles.RunnerClass$runnerfiles@2cf3d63b]" started-at="2023-02-02T09:14:27 IST" name="setUpClass" finished-at="2023-02-02T09:14:27 IST" duration-ms="206" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runnerfiles.RunnerClass$runnerfiles@2cf3d63b]" started-at="2023-02-05T15:52:51 IST" name="setUpClass" finished-at="2023-02-05T15:52:51 IST" duration-ms="237" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@68ea253b]]>
+                <![CDATA[org.testng.TestRunner@32507479]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfiles.RunnerClass$runnerfiles@2cf3d63b]" started-at="2023-02-02T09:14:27 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-02T09:14:32 IST" duration-ms="5165" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfiles.RunnerClass$runnerfiles@2cf3d63b]" started-at="2023-02-05T15:52:51 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-05T15:52:58 IST" duration-ms="6417" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -34,28 +34,10 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [https://rahulshettyacademy.com/seleniumPractise/#/cart] but found [https://rahulshettyacademy.com/seleniumPractise/#/country]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [https://rahulshettyacademy.com/seleniumPractise/#/cart] but found [https://rahulshettyacademy.com/seleniumPractise/#/country]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at org.testng.Assert.assertEquals(Assert.java:665)
-at pageObjects.SelectCountryElements.checkCurrentpageUrl(SelectCountryElements.java:28)
-at stepdefinitions.SelectCountry.check_whether_user_landed_or_select_country_page(SelectCountry.java:20)
-at ✽.check whether user landed or select country page(file:///C:/Users/bikkinak.qpt/eclipse-workspace/CucumberWithDepInjection/src/test/java/features/AddItems.feature:15)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfiles.RunnerClass$runnerfiles@2cf3d63b]" started-at="2023-02-02T09:14:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-02T09:14:37 IST" duration-ms="4858" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfiles.RunnerClass$runnerfiles@2cf3d63b]" started-at="2023-02-05T15:52:58 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-05T15:53:03 IST" duration-ms="5554" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -68,28 +50,10 @@ at ✽.check whether user landed or select country page(file:///C:/Users/bikkina
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [https://rahulshettyacademy.com/seleniumPractise/#/cart] but found [https://rahulshettyacademy.com/seleniumPractise/#/country]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [https://rahulshettyacademy.com/seleniumPractise/#/cart] but found [https://rahulshettyacademy.com/seleniumPractise/#/country]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at org.testng.Assert.assertEquals(Assert.java:665)
-at pageObjects.SelectCountryElements.checkCurrentpageUrl(SelectCountryElements.java:28)
-at stepdefinitions.SelectCountry.check_whether_user_landed_or_select_country_page(SelectCountry.java:20)
-at ✽.check whether user landed or select country page(file:///C:/Users/bikkinak.qpt/eclipse-workspace/CucumberWithDepInjection/src/test/java/features/AddItems.feature:15)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfiles.RunnerClass$runnerfiles@2cf3d63b]" started-at="2023-02-02T09:14:37 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-02T09:14:43 IST" duration-ms="5204" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfiles.RunnerClass$runnerfiles@2cf3d63b]" started-at="2023-02-05T15:53:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-05T15:53:09 IST" duration-ms="5770" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -105,7 +69,7 @@ at ✽.check whether user landed or select country page(file:///C:/Users/bikkina
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfiles.RunnerClass$runnerfiles@2cf3d63b]" started-at="2023-02-02T09:14:43 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-02T09:14:48 IST" duration-ms="5149" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfiles.RunnerClass$runnerfiles@2cf3d63b]" started-at="2023-02-05T15:53:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-05T15:53:15 IST" duration-ms="5700" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -121,7 +85,7 @@ at ✽.check whether user landed or select country page(file:///C:/Users/bikkina
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runnerfiles.RunnerClass$runnerfiles@2cf3d63b]" started-at="2023-02-02T09:14:48 IST" name="tearDownClass" finished-at="2023-02-02T09:14:48 IST" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runnerfiles.RunnerClass$runnerfiles@2cf3d63b]" started-at="2023-02-05T15:53:15 IST" name="tearDownClass" finished-at="2023-02-05T15:53:15 IST" duration-ms="19" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Feb 02 09:14:27 IST 2023</td>
+<td>Started on:</td><td>Sun Feb 05 15:52:51 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>20 seconds (20630 ms)</td>
+<tr><td>Total time:</td><td>23 seconds (23760 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,67 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='runnerfiles.RunnerClass$runnerfiles.runScenario()'><b>runScenario</b><br>Test class: runnerfiles.RunnerClass$runnerfiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search items and add to cart and then check same items appear in checkout", "Automate Search option in GreenKart"</td>
-<td><div><pre>java.lang.AssertionError: expected [https://rahulshettyacademy.com/seleniumPractise/#/cart] but found [https://rahulshettyacademy.com/seleniumPractise/#/country]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1577)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at org.testng.Assert.assertEquals(Assert.java:665)
-	at pageObjects.SelectCountryElements.checkCurrentpageUrl(SelectCountryElements.java:28)
-	at stepdefinitions.SelectCountry.check_whether_user_landed_or_select_country_page(SelectCountry.java:20)
-	at ✽.check whether user landed or select country page(file:///C:/Users/bikkinak.qpt/eclipse-workspace/CucumberWithDepInjection/src/test/java/features/AddItems.feature:15)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1133288103", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1133288103'><pre>java.lang.AssertionError: expected [https://rahulshettyacademy.com/seleniumPractise/#/cart] but found [https://rahulshettyacademy.com/seleniumPractise/#/country]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1577)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at org.testng.Assert.assertEquals(Assert.java:665)
-	at pageObjects.SelectCountryElements.checkCurrentpageUrl(SelectCountryElements.java:28)
-	at stepdefinitions.SelectCountry.check_whether_user_landed_or_select_country_page(SelectCountry.java:20)
-	at ✽.check whether user landed or select country page(file:///C:/Users/bikkinak.qpt/eclipse-workspace/CucumberWithDepInjection/src/test/java/features/AddItems.feature:15)
-</pre></div></td>
-<td>4</td>
-<td>runnerfiles.RunnerClass$runnerfiles@2cf3d63b</td></tr>
-<tr>
-<td title='runnerfiles.RunnerClass$runnerfiles.runScenario()'><b>runScenario</b><br>Test class: runnerfiles.RunnerClass$runnerfiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search items and add to cart and then check same items appear in checkout", "Automate Search option in GreenKart"</td>
-<td><div><pre>java.lang.AssertionError: expected [https://rahulshettyacademy.com/seleniumPractise/#/cart] but found [https://rahulshettyacademy.com/seleniumPractise/#/country]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1577)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at org.testng.Assert.assertEquals(Assert.java:665)
-	at pageObjects.SelectCountryElements.checkCurrentpageUrl(SelectCountryElements.java:28)
-	at stepdefinitions.SelectCountry.check_whether_user_landed_or_select_country_page(SelectCountry.java:20)
-	at ✽.check whether user landed or select country page(file:///C:/Users/bikkinak.qpt/eclipse-workspace/CucumberWithDepInjection/src/test/java/features/AddItems.feature:15)
-</pre></div><a href='#' onClick='toggleBox("stack-trace533140425", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace533140425'><pre>java.lang.AssertionError: expected [https://rahulshettyacademy.com/seleniumPractise/#/cart] but found [https://rahulshettyacademy.com/seleniumPractise/#/country]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1577)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-	at org.testng.Assert.assertEquals(Assert.java:131)
-	at org.testng.Assert.assertEquals(Assert.java:655)
-	at org.testng.Assert.assertEquals(Assert.java:665)
-	at pageObjects.SelectCountryElements.checkCurrentpageUrl(SelectCountryElements.java:28)
-	at stepdefinitions.SelectCountry.check_whether_user_landed_or_select_country_page(SelectCountry.java:20)
-	at ✽.check whether user landed or select country page(file:///C:/Users/bikkinak.qpt/eclipse-workspace/CucumberWithDepInjection/src/test/java/features/AddItems.feature:15)
-</pre></div></td>
-<td>5</td>
-<td>runnerfiles.RunnerClass$runnerfiles@2cf3d63b</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -137,12 +76,22 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runnerfiles.RunnerClass$runnerfiles.runScenario()'><b>runScenario</b><br>Test class: runnerfiles.RunnerClass$runnerfiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "search item in greenkart and top dealsc", "Automate Search option in GreenKart"</td>
+<td title='runnerfiles.RunnerClass$runnerfiles.runScenario()'><b>runScenario</b><br>Test class: runnerfiles.RunnerClass$runnerfiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search items and add to cart and then check same items appear in checkout", "Automate Search option in GreenKart"</td>
+<td></td>
+<td>6</td>
+<td>runnerfiles.RunnerClass$runnerfiles@2cf3d63b</td></tr>
+<tr>
+<td title='runnerfiles.RunnerClass$runnerfiles.runScenario()'><b>runScenario</b><br>Test class: runnerfiles.RunnerClass$runnerfiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search items and add to cart and then check same items appear in checkout", "Automate Search option in GreenKart"</td>
 <td></td>
 <td>5</td>
 <td>runnerfiles.RunnerClass$runnerfiles@2cf3d63b</td></tr>
 <tr>
 <td title='runnerfiles.RunnerClass$runnerfiles.runScenario()'><b>runScenario</b><br>Test class: runnerfiles.RunnerClass$runnerfiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "search item in greenkart and top dealsb", "Automate Search option in GreenKart"</td>
+<td></td>
+<td>5</td>
+<td>runnerfiles.RunnerClass$runnerfiles@2cf3d63b</td></tr>
+<tr>
+<td title='runnerfiles.RunnerClass$runnerfiles.runScenario()'><b>runScenario</b><br>Test class: runnerfiles.RunnerClass$runnerfiles<br>Test method: Runs Cucumber Scenarios<br>Parameters: "search item in greenkart and top dealsc", "Automate Search option in GreenKart"</td>
 <td></td>
 <td>5</td>
 <td>runnerfiles.RunnerClass$runnerfiles@2cf3d63b</td></tr>

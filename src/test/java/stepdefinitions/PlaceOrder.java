@@ -1,7 +1,13 @@
 package stepdefinitions;
 
+import java.util.List;
+import java.util.Map;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import pageObjects.PlaceOrderElements;
@@ -26,8 +32,15 @@ public class PlaceOrder {
 	}
 
 	@And("check whether items passed to scenario and properly added")
-	public void check_whether_items_passed_to_scenario_and_properly_added() {
+	public void check_whether_items_passed_to_scenario_and_properly_added(DataTable dataTable) {
+		List<Map<String, String>> data = dataTable.asMaps();
+		System.out.println(data);
+		List<WebElement> itemsAddedToCart = objOrderElement.findElements(objOrderElement.itemsaddedtocartcss);
+		for (WebElement x : itemsAddedToCart) {
+	
+			System.out.println(x.getText().split("-")[0].trim());
 
+		}
 	}
 
 	@Then("click on place order")
