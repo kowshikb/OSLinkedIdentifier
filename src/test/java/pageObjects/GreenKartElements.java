@@ -1,17 +1,23 @@
 package pageObjects;
 
+import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class GreenKartElements {
 	public WebDriver driver;
+	public WebDriverWait wait;
 
 	public GreenKartElements(WebDriver driver) {// driver data taken from greerkart class will be used in this class
 		// driver data taken from factoryobjectclass will be used here
 		this.driver = driver;
+		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	}
 
 	public By searchField = By.cssSelector("input[type='search']");
@@ -36,6 +42,12 @@ public class GreenKartElements {
 	public void sendText(String text) {
 		driver.findElement(searchField).sendKeys(text);
 	}
+	
+	public void clearTextFromTextField(By element) {
+		String chars = Keys.chord(Keys.CONTROL, "a"); 
+		driver.findElement(element).sendKeys(chars);
+		driver.findElement(element).sendKeys(Keys.BACK_SPACE);
+	}
 
 	public List<WebElement> findElements(By element) {
 		return driver.findElements(element);
@@ -43,6 +55,19 @@ public class GreenKartElements {
 
 	public WebElement findElement(By element) {
 		return driver.findElement(element);
+	}
+	
+	public int sizeOfAllElementsInPage(By element) {
+		return driver.findElements(element).size();
+	}
+	
+	public void quantityIncrementer(String x,By element) {
+		int itemQuantity = Integer.parseInt(x);
+		while (itemQuantity > 0) {
+			wait.until(ExpectedConditions.visibilityOfElementLocated(element));
+			driver.findElement(element).click();
+			itemQuantity--;
+		}
 	}
 
 }

@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -74,27 +76,22 @@ public class GreenKart {
 
 	}
 
-	@When("^item (.*) is present select items as per (.*) and add to cart$")
-	public void item_brocolli_and_almonds_are_present_select_items_and_add_to_cart(List<String> itemToBeAddedToCart,
-			List<Integer> quantity) {
-		int quantityIndex = 0;
-		for (String item : itemToBeAddedToCart) {
-			objGreenKart.sendText(item);
-			if (objGreenKart.findElement(objGreenKart.productName).getText().split("-")[0].trim()
-					.compareToIgnoreCase(item) == 0) {
-				objGreenKart.findElement(objGreenKart.quantityField).sendKeys("0");
-				int itemQuantity = quantity.get(quantityIndex);
-				while (itemQuantity > 0) {
-					objGreenKart.findElement(objGreenKart.quantityIncrementer).click();
-					itemQuantity--;
-				}
-			}
-			objGreenKart.findElement(objGreenKart.AddToCart).click();
-			quantityIndex++;
-		}
-		System.out.println("Added items to cart");
-
-	}
+	/*
+	 * @When("^item (.*) is present select items as per (.*) and add to cart$")
+	 * public void
+	 * item_brocolli_and_almonds_are_present_select_items_and_add_to_cart(List<
+	 * String> itemToBeAddedToCart, List<Integer> quantity) { int quantityIndex = 0;
+	 * for (String item : itemToBeAddedToCart) { objGreenKart.sendText(item); if
+	 * (objGreenKart.findElement(objGreenKart.productName).getText().split("-")[0].
+	 * trim() .compareToIgnoreCase(item) == 0) {
+	 * objGreenKart.findElement(objGreenKart.quantityField).sendKeys("0"); int
+	 * itemQuantity = quantity.get(quantityIndex); while (itemQuantity > 0) {
+	 * objGreenKart.findElement(objGreenKart.quantityIncrementer).click();
+	 * itemQuantity--; } } objGreenKart.findElement(objGreenKart.AddToCart).click();
+	 * quantityIndex++; } System.out.println("Added items to cart");
+	 * 
+	 * }
+	 */
 
 	@When("item is present select items as per quanity and add to cart")
 	public void item_is_present_select_items_as_per_quanity_and_add_to_cart(DataTable dataTable)
@@ -102,21 +99,15 @@ public class GreenKart {
 		List<Map<String, String>> data = dataTable.asMaps();
 		for (Map<String, String> item : data) {
 			objGreenKart.sendText(item.get("item"));
-			wait.until(ExpectedConditions.visibilityOfElementLocated(objGreenKart.productName));
+			Thread.sleep(1000);
 			if (objGreenKart.findElement(objGreenKart.productName).getText().split("-")[0].trim()
 					.compareToIgnoreCase(item.get("item")) == 0) {
-				objGreenKart.findElement(objGreenKart.quantityField).clear();
-				int itemQuantity = Integer.parseInt(item.get("quantity"));
-				while (itemQuantity > 0) {
-					wait.until(ExpectedConditions.visibilityOfElementLocated(objGreenKart.quantityIncrementer));
-					objGreenKart.findElement(objGreenKart.quantityIncrementer).click();
-					itemQuantity--;
-				}
+				objGreenKart.clearTextFromTextField(objGreenKart.quantityField);
+				objGreenKart.quantityIncrementer(item.get("quantity"),objGreenKart.quantityIncrementer); 
 			}
+			wait.until(ExpectedConditions.visibilityOfElementLocated(objGreenKart.AddToCart));
 			objGreenKart.findElement(objGreenKart.AddToCart).click();
-			objGreenKart.findElement(objGreenKart.searchField).clear();
-			objGreenKart.findElement(objGreenKart.searchButtonCss).click();
-
+			objGreenKart.clearTextFromTextField(objGreenKart.searchField);
 		}
 		System.out.println("Added items to cart");
 

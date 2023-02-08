@@ -13,7 +13,7 @@ public class DriverInitialization {
 
 	public WebDriver webDriverManager() throws Exception {
 
-		FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "\\src\\test\\global.properties");
+		FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "\\src\\test\\resources\\global.properties");
 		Properties proVar = new Properties();
 		proVar.load(fis);
 		String url = proVar.getProperty("url");
@@ -21,7 +21,7 @@ public class DriverInitialization {
 		if (driver == null) {
 			if (proVar.getProperty("browser").equalsIgnoreCase("chrome")) {
 				System.setProperty("webdriver.chrome.driver",
-						System.getProperty("user.dir") + "\\src\\test\\chromedriver.exe");
+						System.getProperty("user.dir") + "\\src\\test\\resources\\chromedriver.exe");
 				driver = new ChromeDriver();
 			
 			}

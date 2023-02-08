@@ -21,7 +21,9 @@ public class PlaceOrderElements {
 
 	public By table = By.cssSelector("table#productCartTables");
 	public By placeOrderButton=By.xpath("//*[contains(text(),'Place Order')]");
+	public By allRowsInTable=By.cssSelector("tbody>tr");
 	public By itemsaddedtocartcss=By.cssSelector("td>p.product-name");
+	public By itemQuantityAddedToCart=By.cssSelector("td>p.quantity");
 	
 
 	public void checkCurrentpageUrl() {

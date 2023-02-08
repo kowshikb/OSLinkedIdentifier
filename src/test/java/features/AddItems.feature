@@ -1,6 +1,6 @@
 Feature: Automate Search option in GreenKart
 
-  @tag1
+  @tag2
   Scenario Outline: Search items and add to cart and then check same items appear in checkout
     Given User is on greenkart landing page
     When item is present select items as per quanity and add to cart
