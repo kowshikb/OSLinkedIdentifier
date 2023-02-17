@@ -1,125 +1,171 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-07T08:55:19 IST" name="Default suite" finished-at="2023-02-07T08:55:51 IST" duration-ms="32286">
+  <suite started-at="2023-02-17T13:56:02 IST" name="Default suite" finished-at="2023-02-17T13:56:40 IST" duration-ms="38750">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfiles.RunnerClass$runnerfiles@5b218417]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-02-07T08:55:19 IST" name="Default test" finished-at="2023-02-07T08:55:51 IST" duration-ms="32286">
+    <test started-at="2023-02-17T13:56:02 IST" name="Default test" finished-at="2023-02-17T13:56:40 IST" duration-ms="38750">
       <class name="runnerfiles.RunnerClass$runnerfiles">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runnerfiles.RunnerClass$runnerfiles@5b218417]" started-at="2023-02-07T08:55:19 IST" name="setUpClass" finished-at="2023-02-07T08:55:20 IST" duration-ms="836" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runnerfiles.RunnerClass$runnerfiles@5b218417]" started-at="2023-02-17T13:56:02 IST" name="setUpClass" finished-at="2023-02-17T13:56:02 IST" duration-ms="607" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@4248b963]]>
+                <![CDATA[org.testng.TestRunner@1dc76fa1]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfiles.RunnerClass$runnerfiles@5b218417]" started-at="2023-02-07T08:55:20 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-07T08:55:50 IST" duration-ms="30292" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfiles.RunnerClass$runnerfiles@5b218417]" started-at="2023-02-17T13:56:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-17T13:56:28 IST" duration-ms="26143" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["search item in greenkart and top dealsb"]]>
+                <![CDATA["verify the links shown when you expand the listed sections OS Features API"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Automate Search option in GreenKart"]]>
+                <![CDATA["Validate dataHub homepage"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfiles.RunnerClass$runnerfiles@5b218417]" started-at="2023-02-07T08:55:20 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-07T08:55:51 IST" duration-ms="31047" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfiles.RunnerClass$runnerfiles@5b218417]" started-at="2023-02-17T13:56:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-17T13:56:28 IST" duration-ms="26161" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Search items and add to cart and then check same items appear in checkout"]]>
+                <![CDATA["verify the links shown when you expand the listed sections OS Downloads API"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Automate Search option in GreenKart"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Brocolli] but found [Almonds]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Brocolli] but found [Almonds]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at org.testng.Assert.assertEquals(Assert.java:665)
-at stepdefinitions.PlaceOrder.check_whether_items_passed_to_scenario_and_properly_added(PlaceOrder.java:42)
-at ✽.check whether items passed to scenario and properly added(file:///C:/Users/kowshik%20bikkina/eclipse-workspace/CucumberWithDepInjection/src/test/java/features/AddItems.feature:13)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfiles.RunnerClass$runnerfiles@5b218417]" started-at="2023-02-07T08:55:20 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-07T08:55:50 IST" duration-ms="30249" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["search item in greenkart and top dealsc"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Automate Search option in GreenKart"]]>
+                <![CDATA["Validate dataHub homepage"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfiles.RunnerClass$runnerfiles@5b218417]" started-at="2023-02-07T08:55:20 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-07T08:55:50 IST" duration-ms="30434" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfiles.RunnerClass$runnerfiles@5b218417]" started-at="2023-02-17T13:56:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-17T13:56:40 IST" duration-ms="37813" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Search items and add to cart and then check same items appear in checkout"]]>
+                <![CDATA["Verify header is the landingPage"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Automate Search option in GreenKart"]]>
+                <![CDATA["Validate dataHub homepage"]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Pears] but found [Pomegranate]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Pears] but found [Pomegranate]
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.failNotEquals(Assert.java:1577)
-at org.testng.Assert.assertEqualsImpl(Assert.java:149)
-at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:655)
-at org.testng.Assert.assertEquals(Assert.java:665)
-at stepdefinitions.PlaceOrder.check_whether_items_passed_to_scenario_and_properly_added(PlaceOrder.java:42)
-at ✽.check whether items passed to scenario and properly added(file:///C:/Users/kowshik%20bikkina/eclipse-workspace/CucumberWithDepInjection/src/test/java/features/AddItems.feature:13)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runnerfiles.RunnerClass$runnerfiles@5b218417]" started-at="2023-02-07T08:55:51 IST" name="tearDownClass" finished-at="2023-02-07T08:55:51 IST" duration-ms="348" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfiles.RunnerClass$runnerfiles@5b218417]" started-at="2023-02-17T13:56:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-17T13:56:27 IST" duration-ms="25130" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["verify specific items/objects are loaded onto the page."]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validate dataHub homepage"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfiles.RunnerClass$runnerfiles@5b218417]" started-at="2023-02-17T13:56:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-17T13:56:28 IST" duration-ms="26153" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["verify specific items/objects are loaded onto the page."]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validate dataHub homepage"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfiles.RunnerClass$runnerfiles@5b218417]" started-at="2023-02-17T13:56:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-17T13:56:29 IST" duration-ms="26515" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["verify specific items/objects are loaded onto the page."]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validate dataHub homepage"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfiles.RunnerClass$runnerfiles@5b218417]" started-at="2023-02-17T13:56:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-17T13:56:28 IST" duration-ms="26174" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["verify specific items/objects are loaded onto the page."]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validate dataHub homepage"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfiles.RunnerClass$runnerfiles@5b218417]" started-at="2023-02-17T13:56:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-17T13:56:28 IST" duration-ms="26153" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["verify the links shown when you expand the listed sections OS Linked Identifiers API"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validate dataHub homepage"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runnerfiles.RunnerClass$runnerfiles@5b218417]" started-at="2023-02-17T13:56:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-02-17T13:56:29 IST" duration-ms="26422" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["verify specific items/objects are loaded onto the page."]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Validate dataHub homepage"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runnerfiles.RunnerClass$runnerfiles@5b218417]" started-at="2023-02-17T13:56:40 IST" name="tearDownClass" finished-at="2023-02-17T13:56:40 IST" duration-ms="281" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

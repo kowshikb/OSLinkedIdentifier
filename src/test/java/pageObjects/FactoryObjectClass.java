@@ -6,10 +6,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class FactoryObjectClass {
-	public GreenKartElements greenKartElement;
-	public OfferPageElements offerPageElement;
-	public PlaceOrderElements placeOrderElement;
-	public SelectCountryElements selectCountryElement;
+	public DataHubHomePageElements dataHubHomePageElementsVar;
+	public DocsPageElements docsPageElementsVar;
+	public ApiDashboardElements apiDashboardElementsVar;
+	public DownloadPageElements downloadPageElementsVar;
+	public PricingElements pricingElementsVar;
+	public SupportPageElements supportPageElementsVar;
 	public WebDriverWait wait;
 
 	public WebDriver driver;
@@ -20,15 +22,15 @@ public class FactoryObjectClass {
 		this.driver = driver;
 	}
 
-	public GreenKartElements GreenKartElementObject() {// methods in this class returns object of pageobject classes
-		greenKartElement = new GreenKartElements(driver);// driver here is passed form class variable of this class
-		return greenKartElement;
+	public DataHubHomePageElements DataHubHomePageElementsObject() {// methods in this class returns object of pageobject classes
+		dataHubHomePageElementsVar = new DataHubHomePageElements(driver);// driver here is passed form class variable of this class
+		return dataHubHomePageElementsVar;
 
 	}
 
-	public OfferPageElements OfferPageElementObject() {
-		offerPageElement = new OfferPageElements(driver);
-		return offerPageElement;
+	public DocsPageElements DocsPageElementsObject() {
+		docsPageElementsVar = new DocsPageElements(driver);
+		return docsPageElementsVar;
 
 	}
 	
@@ -37,17 +39,32 @@ public class FactoryObjectClass {
 		return wait;
 	}
 	
-	public PlaceOrderElements PlaceOrderElementsObject() {
-		placeOrderElement= new PlaceOrderElements(driver);
-		return placeOrderElement;
+	public ApiDashboardElements ApiDashboardElementsObject() {
+		apiDashboardElementsVar= new ApiDashboardElements(driver);
+		return apiDashboardElementsVar;
 		
 	}
 	
-	public SelectCountryElements SelectCountryElementsObject() {
-		selectCountryElement= new SelectCountryElements(driver);
-		return selectCountryElement;
+	public DownloadPageElements DownloadPageElementsObject() {
+		downloadPageElementsVar= new DownloadPageElements(driver);
+		return downloadPageElementsVar;
 		
 	}
+	
+	public PricingElements PricingElementsObject() {
+		pricingElementsVar= new PricingElements(driver);
+		return pricingElementsVar;
+		
+	}
+	
+	public SupportPageElements SupportPageElementsObject() {
+		supportPageElementsVar= new SupportPageElements(driver);
+		return supportPageElementsVar;
+		
+	}
+	
+	
+	
 	
 
 }

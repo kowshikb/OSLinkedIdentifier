@@ -20,12 +20,12 @@ public class hooks {
 		this.textContext = textContext;
 	}
 
-	@Before("@tag1")
+	@Before("@smoke")
 	public void beforeValidation() throws Exception {
 		System.out.println("test");
 	}
 
-	@After("@tag1 or @tag2")
+	@After("@smoke")
 	public void afterValidation() throws Exception {
 		textContext.driverInitVar.webDriverManager().quit();
 	}
