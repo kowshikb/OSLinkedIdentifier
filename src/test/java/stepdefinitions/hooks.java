@@ -27,7 +27,13 @@ public class hooks {
 
 	@After("@smoke")
 	public void afterValidation() throws Exception {
-		textContext.driverInitVar.webDriverManager().quit();
+		try {
+			textContext.driverInitVar.webDriverManager().quit();
+		}
+		catch(Exception e) {
+			System.out.println("driver server fails to stop within the expected time frame");
+		}
+		
 	}
 
 	@AfterStep

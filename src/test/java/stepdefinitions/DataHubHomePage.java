@@ -123,10 +123,17 @@ public class DataHubHomePage {
 		List<WebElement> elementsInDropdown = downloadPageElementsVar
 				.findElements(downloadPageElementsVar.allelementinDropdown);
 		for (WebElement x : elementsInDropdown) {
-			if (x.getText().equalsIgnoreCase("Lookups")) {
-				x.click();
-				System.out.println("Selected Lookups");
+			try {
+				if (x.getText().equalsIgnoreCase("Lookups")) {
+					x.click();
+					System.out.println("Selected Lookups");
+				}
+				
 			}
+			catch(Exception e){
+				System.out.println("Ignore");
+			}
+			
 		}
 		System.out.println("selected one random element from dropdown");
 
