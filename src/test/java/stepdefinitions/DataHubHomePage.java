@@ -47,8 +47,15 @@ public class DataHubHomePage {
 
 	@Given("User is on dataHub LandingPage and accept cookies")
 	public void user_is_on_dataHub_LandingPage_and_accept_cookies() throws IOException {
-		wait.until(ExpectedConditions.visibilityOfElementLocated(dataHubHomePageElementsVar.acceptCookies));
-		dataHubHomePageElementsVar.findElement(dataHubHomePageElementsVar.acceptCookies).click();
+		try {
+			wait.until(ExpectedConditions.visibilityOfElementLocated(dataHubHomePageElementsVar.acceptCookies));
+			dataHubHomePageElementsVar.findElement(dataHubHomePageElementsVar.acceptCookies).click();
+
+		} catch (Exception e) {
+			wait.until(ExpectedConditions.visibilityOfElementLocated(dataHubHomePageElementsVar.acceptCookies));
+			dataHubHomePageElementsVar.findElement(dataHubHomePageElementsVar.acceptCookies).click();
+		}
+
 		System.out.println("Accepted cookies in landingPage");
 		wait.until(ExpectedConditions.visibilityOfElementLocated(dataHubHomePageElementsVar.welcomeText));
 		String textonlandingpage = textContext.driverInitVar.proVar.getProperty("textonlandingpage");
@@ -128,12 +135,11 @@ public class DataHubHomePage {
 					x.click();
 					System.out.println("Selected Lookups");
 				}
-				
-			}
-			catch(Exception e){
+
+			} catch (Exception e) {
 				System.out.println("Ignore");
 			}
-			
+
 		}
 		System.out.println("selected one random element from dropdown");
 
@@ -224,7 +230,6 @@ public class DataHubHomePage {
 	public void verify_links_shown_after_expanding_os_linked_identifiers_api() {
 		docsPageElementsVar.getAllElementsAfterClick(docsPageElementsVar.subelementsUnderMainOption);
 		System.out.println("printed subelements in Linked Identifiers API ");
-
 
 	}
 

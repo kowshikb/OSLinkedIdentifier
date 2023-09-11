@@ -1,7 +1,6 @@
 package utils;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
@@ -23,12 +22,14 @@ public class DriverInitialization {
 		String url = proVar.getProperty("url");
 
 		if (driver == null) {
+			
 			if (proVar.getProperty("browser").equalsIgnoreCase("chrome")) {
 				System.setProperty("webdriver.chrome.driver",
 						System.getProperty("user.dir") + "\\src\\test\\resources\\chromedriver.exe");
 				driver = new ChromeDriver();
 
 			}
+
 			driver.get(url);
 			driver.manage().window().maximize();
 		}

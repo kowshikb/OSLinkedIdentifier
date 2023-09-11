@@ -9,8 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ApiDashboardElements {
-	
-	
+
 	public WebDriver driver;
 	public WebDriverWait wait;
 
@@ -19,12 +18,9 @@ public class ApiDashboardElements {
 		this.driver = driver;
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	}
-	
-	public By elementOfApiDashboard=By.xpath("//*[contains(text(),'API Dashboard')]");
-	public By elementOftextonApiDashboard=By.cssSelector("p.MuiTypography-root.MuiTypography-body1");
-	
-	
-	
+
+	public By elementOfApiDashboard = By.xpath("//*[contains(text(),'API Dashboard')]");
+	public By elementOftextonApiDashboard = By.cssSelector("p.MuiTypography-root.MuiTypography-body1");
 
 	public List<WebElement> findElements(By element) {
 		return driver.findElements(element);
